@@ -39,6 +39,8 @@ body {
 
 .subtitle { color: var(--secondary-text); font-size: 0.95rem; margin: 4px 0 0 0; }
 
+.typewriter-cursor { animation: blink 1.2s step-end infinite; }
+
 nav { margin-top: 25px; display: flex; align-items: center; gap: 20px; }
 
 nav a { text-decoration: none; color: var(--secondary-text); }
@@ -75,9 +77,7 @@ section { margin-top: 1.5rem; }
 
 .desc { font-size: 0.9rem; color: var(--secondary-text); margin-top: 2px; }
 
-.cursor { font-weight: bold; color: var(--cursor-color); animation: blink 1.2s step-end infinite; }
-
-@keyframes blink { from, to { color: transparent; } 50% { color: var(--cursor-color); } }
+@keyframes blink { from, to { opacity: 0; } 50% { opacity: 1; } }
 
 .hidden { display: none; }
 

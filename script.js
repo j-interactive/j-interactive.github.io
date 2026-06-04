@@ -1,3 +1,15 @@
+const subtitleEl = document.querySelector('.subtitle');
+const subtitleText = subtitleEl.textContent.trimEnd().replace(/▌$/, '').trimEnd();
+subtitleEl.innerHTML = '<span class="tw"></span><span class="typewriter-cursor">▌</span>';
+const twEl = subtitleEl.querySelector('.tw');
+let i = 0;
+(function type() {
+    if (i <= subtitleText.length) {
+        twEl.textContent = subtitleText.slice(0, i++);
+        setTimeout(type, 50);
+    }
+})();
+
 const toggleBtn = document.getElementById('theme-toggle');
 const sunIcon = document.getElementById('sun-icon');
 const moonIcon = document.getElementById('moon-icon');
