@@ -1,255 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Joe Griffiths, senior web developer and e-commerce architect. Enterprise Shopify, AI integrations, bespoke APIs. Cheltenham, UK. Available for freelance.">
 <title>Joe Griffiths</title>
-
 <link rel="canonical" href="https://j-interactive.dev">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20x='7'%20y='0'%20width='86'%20height='100'%20rx='40'%20fill='%23000000'/%3E%3Cpath%20d='M56%2012%20V56%20a22%2022%200%200%201%20-22%2022'%20fill='none'%20stroke='%23808080'%20stroke-width='8'%20stroke-linecap='round'/%3E%3C/svg%3E">
+<meta name="description" content="Joe Griffiths, senior engineer and e-commerce architect in Cheltenham, UK. Backend and integration depth, bespoke APIs, AWS, and AI automation, with Shopify. Open to new work.">
 <meta name="theme-color" content="#0a0a0a">
-
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Joe Griffiths">
-<meta property="og:description" content="Senior web developer and e-commerce architect in Cheltenham, UK. Enterprise Shopify, AI integrations, and bespoke APIs. Available for freelance.">
 <meta property="og:url" content="https://j-interactive.dev">
+<meta property="og:title" content="Joe Griffiths">
+<meta property="og:description" content="Senior engineer and e-commerce architect in Cheltenham, UK. Backend and integration depth, bespoke APIs, AWS, and AI automation. Open to new work.">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Joe Griffiths">
-<meta name="twitter:description" content="Senior web developer and e-commerce architect in Cheltenham, UK. Enterprise Shopify, AI integrations, and bespoke APIs. Available for freelance.">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Joe Griffiths",
-  "jobTitle": "Senior Web Developer and E-commerce Architect",
-  "url": "https://j-interactive.dev",
-  "email": "mailto:joe@j-interactive.dev",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Cheltenham",
-    "addressCountry": "GB"
-  },
-  "worksFor": { "@type": "Organization", "name": "SOZO", "url": "https://www.sozodesign.co.uk" },
-  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Gloucestershire" },
-  "sameAs": [
-    "https://www.linkedin.com/in/joe-griffiths-979913217",
-    "https://github.com/sozojoe"
-  ]
-}
-</script>
-
+<meta name="twitter:description" content="Senior engineer and e-commerce architect in Cheltenham, UK. Backend and integration depth, bespoke APIs, AWS, and AI automation. Open to new work.">
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap');
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html {
-  font-size: 15px;
-  background: #0a0a0a;
-  color: #ededed;
-}
-
-body {
-  font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  padding: 0 20px;
-}
-
-.page {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 80px 0 100px;
-}
-
-h1 {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 20px;
-  color: #ededed;
-}
-
-p {
-  font-size: 0.933rem;
-  color: #a1a1a1;
-  line-height: 1.75;
-  margin-bottom: 20px;
-}
-
-p a {
-  color: #ededed;
-  text-decoration: none;
-  border-bottom: 1px solid #333;
-  padding-bottom: 1px;
-  transition: border-color 0.15s;
-}
-
-p a:hover {
-  border-color: #888;
-}
-
-h2 {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 56px 0 28px;
-  color: #ededed;
-}
-
-.work { list-style: none; }
-
-.work li { margin-bottom: 28px; }
-
-.work .title {
-  font-size: 0.933rem;
-  font-weight: 500;
-  color: #ededed;
-}
-
-.work .title a {
-  color: #ededed;
-  text-decoration: none;
-  border-bottom: 1px solid #333;
-  padding-bottom: 1px;
-  transition: border-color 0.15s;
-}
-
-.work .title a:hover { border-color: #888; }
-
-.work .desc {
-  font-size: 0.933rem;
-  color: #a1a1a1;
-  line-height: 1.7;
-  margin-top: 4px;
-}
-
-.work .meta {
-  font-size: 0.8rem;
-  color: #808080;
-  margin-top: 6px;
-}
-
-.foot {
-  margin-top: 40px;
-  font-size: 0.8rem;
-  color: #808080;
-}
-
+  :root{
+    --bg:#0a0a0a;
+    --fg:#e8e8e4;
+    --muted:#8c8c86;
+    --accent:#8fb9c4;
+    --rule:#212121;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);
+    font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:46rem;margin:0 auto;padding:5rem 1.5rem 4rem;}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;
+    transition:border-color .15s ease;}
+  a:hover{border-bottom-color:var(--accent);}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
+  h1{font-size:2.6rem;line-height:1.04;letter-spacing:-0.022em;font-weight:700;margin:0 0 1.6rem;}
+  p{margin:0 0 1.15rem;}
+  h2{font-family:var(--mono);font-size:.82rem;font-weight:500;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--muted);margin:3.2rem 0 .4rem;padding-bottom:.7rem;
+    border-bottom:1px solid var(--rule);}
+  .note{color:var(--muted);font-size:.95rem;margin:0 0 2rem;}
+  .project{margin:0 0 1.9rem;}
+  .project h3{font-size:1.12rem;font-weight:600;margin:0 0 .3rem;letter-spacing:-0.01em;}
+  .project p{margin:0 0 .5rem;}
+  .stack{font-family:var(--mono);font-size:.78rem;color:var(--muted);letter-spacing:.01em;}
+  .closing{margin:2.6rem 0 0;}
+  .contact{font-family:var(--mono);font-size:.84rem;color:var(--muted);
+    margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--rule);line-height:2;}
+  .contact a{color:var(--fg);}
+  .year{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-top:2.4rem;}
+  @media (max-width:480px){
+    .wrap{padding:3.2rem 1.25rem;}
+    h1{font-size:2.05rem;}
+    body{font-size:16px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
 </style>
 </head>
 <body>
-<div class="page">
+<main class="wrap">
 
   <h1>Joe Griffiths</h1>
 
-  <p>
-    I'm a senior web developer and e-commerce architect based in
-    <a href="https://en.wikipedia.org/wiki/Cheltenham" target="_blank" rel="noopener">Cheltenham, UK</a>.
-    I work part-time at SOZO, building and maintaining the backends and
-    integrations behind high-volume retail sites: payments, search, email,
-    and links into warehouse and stock systems. Right now I'm focused on
-    <a href="https://shopify.dev" target="_blank" rel="noopener">Shopify</a>,
-    AI, and bespoke APIs.
-  </p>
+  <p>I'm an independent senior engineer and e-commerce architect based in
+  <a href="https://en.wikipedia.org/wiki/Cheltenham">Cheltenham, UK</a>. I build and
+  operate the backends and integrations behind high-volume retail: bespoke APIs, payments,
+  search, email, and the links into warehouse and stock systems that make the rest work. I
+  work with SOZO, my current focus is integration-heavy Shopify and bespoke platforms, and
+  I'm increasingly building AI into production.</p>
 
-  <p>
-    I've been building for the web since 1999 and at SOZO since 2007, across
-    bespoke PHP platforms, the infrastructure that runs them, and the
-    e-commerce on top. Over the last year I've moved into Shopify
-    extensibility: embedded apps and custom Functions handling checkout and
-    discount logic.
-  </p>
+  <p>I've been building for the web since 1999 and working with SOZO since 2007, across
+  bespoke PHP platforms, the AWS and Linux infrastructure that runs them, and the e-commerce
+  on top. Over the last year I've moved into <a href="https://shopify.dev">Shopify</a>
+  extensibility, embedded apps and custom Functions handling checkout and discount logic, and
+  into AI automation.</p>
 
-  <p>
-    My stack is PHP, JavaScript, SQL, Liquid, AWS, and Linux.
-    I work extensively with Shopify Functions, Klaviyo, and Clerk.io,
-    and I'm increasingly building AI into e-commerce workflows.
-  </p>
+  <p>My stack is PHP, JavaScript, SQL, Liquid, Python, AWS, and Linux. I work extensively with
+  bespoke APIs across REST and GraphQL, and with third-party integrations, payments, search,
+  stock and fulfilment, and email, and I'm building AI into both e-commerce workflows and my
+  own tooling.</p>
 
-  <p>
-    Before SOZO I freelanced as j-interactive (2003–2007), and started out at
-    County Business Net
-    as a senior developer and network administrator (1999–2003).
-    BSc in Multimedia and Computing from the
-    <a href="https://www.glos.ac.uk" target="_blank" rel="noopener">University of Gloucestershire</a>.
-  </p>
+  <p>Before SOZO I freelanced as j-interactive (2003–2007), and started out at County Business
+  Net as a senior developer and network administrator (1999–2003). BSc in Multimedia and
+  Computing from the <a href="https://www.glos.ac.uk">University of Gloucestershire</a>.</p>
 
   <h2>Selected work</h2>
+  <p class="note">Several of these were built on a bespoke in-house CMS.</p>
 
-  <p>Several of these were built on a bespoke in-house CMS.</p>
+  <div class="project">
+    <h3><a href="https://justfabrics.co.uk">Just Fabrics</a></h3>
+    <p>Lead developer since 2012 on a specialist fabric retailer. Built and ran the bespoke PHP
+    e-commerce platform, then led its migration to Shopify, including a custom theme, an embedded
+    app syncing stock and fulfilment across five warehouses, and Shopify Functions powering
+    automated discounts.</p>
+    <p class="stack">PHP · GraphQL · AWS · Shopify · Liquid · Functions · Algolia · Klaviyo · Clerk.io</p>
+  </div>
 
-  <ul class="work">
+  <div class="project">
+    <h3><a href="https://toutscard.touts.co.uk">TOUT'S Card</a></h3>
+    <p>Loyalty programme for a regional supermarket group, integrated with the in-store EPOS
+    loyalty system. Member portal, voucher redemption, and barcode generation, maintained across
+    eleven years and four major versions.</p>
+    <p class="stack">PHP · MySQL · AWS</p>
+  </div>
 
-    <li>
-      <div class="title"><a href="https://justfabrics.co.uk" target="_blank" rel="noopener">Just Fabrics</a></div>
-      <div class="desc">
-        Lead developer since 2012 on a specialist fabric retailer. Built and ran the
-        bespoke PHP e-commerce platform, then led its migration to Shopify, including
-        a custom theme, an embedded app syncing stock and fulfilment across five
-        warehouses, and Shopify Functions powering automated discounts.
-      </div>
-      <div class="meta">PHP · Shopify · Liquid · Functions · Clerk.io · Klaviyo</div>
-    </li>
+  <div class="project">
+    <h3>3D Creation Lab</h3>
+    <p>Online platform for a 3D printing bureau, with a step-by-step model upload and instant
+    quoting flow, accounts, and checkout.</p>
+    <p class="stack">PHP · MySQL · SagePay · PayPal</p>
+  </div>
 
-    <li>
-      <div class="title">Jane Plan</div>
-      <div class="desc">
-        Personalised meal-delivery subscription platform, built from scratch.
-        Plan selection, meal customisation, payments, and a
-        two-way integration with a third-party fulfilment warehouse.
-      </div>
-      <div class="meta">PHP · MySQL · WorldPay · PayPal IPN</div>
-    </li>
+  <div class="project">
+    <h3>Jane Plan</h3>
+    <p>Personalised meal-delivery subscription platform: plan selection, meal customisation,
+    payments, and a two-way integration with a third-party fulfilment warehouse.</p>
+    <p class="stack">PHP · MySQL · WorldPay · PayPal IPN</p>
+  </div>
 
-    <li>
-      <div class="title"><a href="https://toutscard.touts.co.uk" target="_blank" rel="noopener">TOUT'S Card</a></div>
-      <div class="desc">
-        Loyalty programme for a regional supermarket group, integrated with the
-        in-store EPOS loyalty system. Member portal, voucher redemption, and
-        barcode generation, maintained across eleven years and four major versions.
-      </div>
-      <div class="meta">PHP · MySQL · AWS</div>
-    </li>
+  <div class="project">
+    <h3>Shopify API Schema Tracker</h3>
+    <p>A personal project that watches Shopify's unstable GraphQL API for undocumented changes
+    every day, then runs an AI step to summarise the diff and post it to Slack, giving early
+    sight of platform changes before they're announced.</p>
+    <p class="stack">Python · GitHub Actions · AI · Slack</p>
+  </div>
 
-    <li>
-      <div class="title">3D Creation Lab</div>
-      <div class="desc">
-        Online platform for a 3D printing bureau, with a step-by-step model upload
-        and instant quoting flow, accounts, and checkout.
-      </div>
-      <div class="meta">PHP · MySQL · SagePay · PayPal</div>
-    </li>
+  <p class="closing">I'm open to new work, so do get in touch.</p>
 
-    <li>
-      <div class="title">Shopify API Schema Tracker</div>
-      <div class="desc">
-        A personal project that watches Shopify's unstable GraphQL API for undocumented
-        changes every day, then uses an AI step to summarise the diff and post it to Slack,
-        giving early sight of platform changes before they're announced.
-      </div>
-      <div class="meta">GitHub Actions · Python · AI · Slack</div>
-    </li>
+  <div class="contact">
+    <a href="mailto:joe@j-interactive.dev">joe@j-interactive.dev</a> ·
+    <a href="https://www.linkedin.com/in/joe-griffiths-979913217">LinkedIn</a> ·
+    <a href="https://j-interactive.dev/Joseph-Griffiths-CV.pdf">CV (PDF)</a>
+  </div>
 
-  </ul>
+  <p class="year">2026</p>
 
-  <p>I'm available for freelance work, so do get in touch.</p>
-
-  <p>
-    <a href="mailto:joe@j-interactive.dev">joe@j-interactive.dev</a>
-    &nbsp;·&nbsp;
-    <a href="https://www.linkedin.com/in/joe-griffiths-979913217" target="_blank" rel="noopener">LinkedIn</a>
-    &nbsp;·&nbsp;
-    <a href="https://github.com/sozojoe" target="_blank" rel="noopener">GitHub</a>
-    &nbsp;·&nbsp;
-    <a href="Joseph-Griffiths-CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-  </p>
-
-  <div class="foot">2026</div>
-
-</div>
+</main>
 </body>
 </html>
